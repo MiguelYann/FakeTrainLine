@@ -1,0 +1,24 @@
+h1{
+    color: white;
+    font-family: 'Open Sans Condensed';
+
+
+}
+h2{
+    color: #2442EA;
+    font-family: 'Open Sans Condensed';
+
+}
+
+#icon-train{
+    width: 150px;
+    height: 40px;
+    color: white;
+    size: A4;
+}
+
+.btn {
+    background-color: #61dafb;
+    font-family: 'Open Sans Condensed';
+
+}
