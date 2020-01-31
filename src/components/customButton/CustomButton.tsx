@@ -4,13 +4,15 @@ import './customButton.css';
 
 interface CustomButtonProps {
     title: string,
+    idButton: string
+    buttonType?:'text' | 'outlined' | 'contained'
     handlerOnClick: () => any;
 }
 
-const CustomButton = ({title, handlerOnClick}: CustomButtonProps) => {
+const CustomButton = ({title, idButton, handlerOnClick, buttonType}: CustomButtonProps) => {
     return (
-        <Button id={'btn-custom'}
-                variant="contained"
+        <Button id={idButton}
+                variant={buttonType}
                 onClick={handlerOnClick}
         >
             {title}

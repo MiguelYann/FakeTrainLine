@@ -1,0 +1,21 @@
+.position-gare{
+    color: #2442EA;
+}
+.ticket-price {
+    color: green;
+    font-weight: bold;
+}
+.position-price {
+    color: white;
+    font-weight: bold;
+}
+.divPrice{
+    background-color: green;
+    float: right;
+    border-radius: 50%;
+    width: 70px;
+    height: 50px;
+    margin: auto;
+
+}
+

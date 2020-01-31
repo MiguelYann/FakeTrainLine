@@ -12,6 +12,8 @@ interface UserInputProps {
 }
 
 export const UserInput = ({handlerInput, inputLabel, inputType, name}: UserInputProps) => {
+
+
     return (
         <>
             {/*<MdEmail id={'icon-mail'}/>*/}

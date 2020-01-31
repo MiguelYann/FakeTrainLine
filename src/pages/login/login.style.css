@@ -10,15 +10,28 @@ h2{
 
 }
 
-#icon-train{
-    width: 150px;
-    height: 40px;
-    color: white;
-    size: A4;
+p{
+    color: red;
+    font-family: 'Open Sans Condensed';
+
 }
+
 
 .btn {
     background-color: #61dafb;
     font-family: 'Open Sans Condensed';
 
 }
+
+#btn-custom {
+    background-color: #2442EA;
+    padding: 10px 36px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+    font-weight: bolder;
+}
+#error{
+    font-size: 100px;
+}
+

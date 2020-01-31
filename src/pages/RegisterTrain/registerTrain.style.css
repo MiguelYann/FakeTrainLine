@@ -1,0 +1,52 @@
+.registrer-train-destination {
+    width: 15%;
+    float: left;
+    display: flow;
+    background-color: white;
+}
+.items{
+    background-color: white;
+}
+.registrer-train-arrival {
+    width: 15%;
+    float: right;
+    display: flow;
+    background-color: white;
+
+}
+#span-title {
+    color:#2442EA;
+}
+#list-gare{
+    float: bottom;
+}
+#btn-register{
+    margin-top: 40%;
+}
+#btn-customProfile{
+    background-color: green;
+    /*padding: 10px 36px;*/
+    /*margin-top: 10px;*/
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+
+#btn-customRegister {
+    background-color: #2442EA;
+    padding: 10px 36px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+.code-promo{
+
+}
+
+#erros {
+    font-size: 300px;
+}
+
+
