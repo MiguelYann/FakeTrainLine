@@ -25,22 +25,19 @@
 }
 #btn-customProfile{
     background-color: green;
-    /*padding: 10px 36px;*/
-    /*margin-top: 10px;*/
     font-size: 18px;
     color: white;
     font-weight: bold;
 }
-
 
 #btn-customRegister {
     background-color: #2442EA;
     padding: 10px 36px;
-    margin-top: 10px;
     font-size: 18px;
     color: white;
     font-weight: bold;
 }
+
 .code-promo{
 
 }

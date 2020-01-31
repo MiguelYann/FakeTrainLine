@@ -14,8 +14,15 @@ class App extends Component<any, any> {
         this.state = {
             mailInput: '',
             passwordInput: '',
+            isEnabledPromote: true,
             isLogged: false
         }
+    }
+
+    changePromote() {
+        this.setState({
+            isEnabledPromote: false
+        })
     }
 
     onSubmitLogin = async () => {
@@ -49,23 +56,25 @@ class App extends Component<any, any> {
         }
     }
 
-    componentDidUpdate(prevProps: Readonly<any>, prevState: Readonly<any>, snapshot?: any): void {
+    componentWillUpdate(prevProps: Readonly<any>, prevState: Readonly<any>, snapshot?: any): void {
         localStorage.setItem('user', JSON.stringify(prevState));
     }
 
     render() {
-        const {isLogged, mailInput, passwordInput} = this.state;
+        const {mailInput, passwordInput, isEnabledPromote, isLogged} = this.state;
         return (
             <div className="App">
                 <Route
-                    render={(props) => <Login
-                        submitLogin={this.onSubmitLogin}
-                        isLoggedIn={isLogged}
-                        handleMail={this.handleInputMail}
-                        handlePassword={this.handleInputPassword}
-                        email={mailInput}
-                        password={passwordInput}
-                    />}
+                    render=
+                        {
+                            () => <Login
+                                submitLogin={this.onSubmitLogin}
+                                isLoggedIn={isLogged}
+                                handleMail={this.handleInputMail}
+                                handlePassword={this.handleInputPassword}
+                                email={mailInput}
+                                password={passwordInput}
+                            />}
                     exact path={'/'}
                 />
 
@@ -76,9 +85,7 @@ class App extends Component<any, any> {
                                 isLoggedInRegistred={isLogged}
                             />
                         }
-
                     path={'/registerTrain'}
-
                 />
 
                 <Route
@@ -86,10 +93,10 @@ class App extends Component<any, any> {
                         {
                             () => <ProfileUser
                                 isLoggedInProfile={isLogged}
-                            />
+                                isPromote={isEnabledPromote}/>
                         }
-
-                    path={'/profile'} />
+                    path={'/profile'}
+                />
 
             </div>
         )

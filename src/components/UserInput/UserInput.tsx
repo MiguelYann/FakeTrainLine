@@ -7,16 +7,12 @@ interface UserInputProps {
     inputType?: string
     name?: string
     handlerInput: (e: any) => any,
-
-
 }
 
 export const UserInput = ({handlerInput, inputLabel, inputType, name}: UserInputProps) => {
 
-
     return (
         <>
-            {/*<MdEmail id={'icon-mail'}/>*/}
             <TextField
                 className={'input'}
                 variant="filled"
@@ -28,7 +24,6 @@ export const UserInput = ({handlerInput, inputLabel, inputType, name}: UserInput
                 onChange={handlerInput}
 
             />
-
         </>
     );
 }

@@ -13,8 +13,8 @@ const Login = (props: any) => {
             <h1>{title}</h1>
             <h2>{appName}</h2>
             <IoMdTrain id={'icon-train'}/>
-            <div>
 
+            <div className={'user-input-panel'}>
                 <UserInput
                     inputLabel={'Entrer votre email'}
                     inputType={'email'}
@@ -33,9 +33,6 @@ const Login = (props: any) => {
                     title={'Connexion'}
                     handlerOnClick={props.submitLogin}
                 />
-                {
-
-                }
             </div>
         </>
     );

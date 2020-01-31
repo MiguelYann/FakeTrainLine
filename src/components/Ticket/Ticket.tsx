@@ -36,11 +36,9 @@ const useStyles = makeStyles((theme: Theme) =>
         },
     }));
 
-
-
 const Ticket = ({stationArrival, stationDestination, ticketPrice,}: TicketProps) => {
     const classes = useStyles();
-    return(
+    return (
 
         <div className={classes.root}>
             <Paper className={classes.paper}>
@@ -77,7 +75,7 @@ const Ticket = ({stationArrival, stationDestination, ticketPrice,}: TicketProps)
                             <Grid item>
                                 <Typography variant="subtitle1">
                                     <div className={'divPrice'}>
-                                    <p className={'position-price'}> {ticketPrice}</p>
+                                        <p className={'position-price'}> {ticketPrice}</p>
                                     </div>
                                 </Typography>
                             </Grid>
@@ -87,7 +85,7 @@ const Ticket = ({stationArrival, stationDestination, ticketPrice,}: TicketProps)
                 </Grid>
             </Paper>
         </div>
-     );
+    );
 
 
 };
